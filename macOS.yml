@@ -4,32 +4,62 @@
   connection: local
   vars:
     brew_cask_packages:
-      - 'docker'
+      # Tools/Admin
+      - 'dbeaver-community'
+      - 'docker-desktop'
+      - 'leapp'
+      - 'postman'
+
+      # Browsers
       - 'firefox'
       - 'google-chrome'
-      - 'intellij-idea-ce'
-      - 'pycharm-ce'
-      - 'skype'
-      - 'vagrant'
-      - 'virtualbox'
-      - 'virtualbox-extension-pack'
+
+      # AI Editors
+      - 'trae'
+      - 'windsurf'
+      - 'antigravity'
+
+      # Editors
+      - 'jetbrains-toolbox'
       - 'visual-studio-code'
-      - 'zoomus' 
+  
+      # Virtual Machines 
+      # - 'vagrant'
+      # - 'virtualbox'
+      # - 'virtualbox-extension-pack'
+
+      # Office
+      - 'microsoft-office'
+
+      # Terminal
+      - kitty
+
     brew_packages:
+      # Tools/Admin
       - 'autoconf'
+      - 'ansible'
       - 'bash-completion'
-      - 'docker-compose'
       - 'go'
       - 'jq'
       - 'nmap'
-      - 'packer'
-      - 'python@2'
-      - 'python@3'
       - 'ssh-copy-id'
-      - 'tmux'
       - 'tree'
-      - 'vault'
-      - 'wget'
+      - 'openfortivpn'
+      - 'awscli'
+      - 'pgcli'
+      - 'mycli'
+      - 'terraform'
+      - 'terragrunt'
+      - 'pocketbase'
+
+      # Runtime Managers
+      - 'uv'
+      - 'nvm'
+      - 'jenv'
+
+      # pde
+      - 'neovim'
+
   tasks:
     - name: Installing Homebrew Packages
       homebrew:
